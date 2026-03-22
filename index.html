@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    color: #1a1a2e;
+    background: #f8f9fa;
+    padding: 0;
+  }
+  header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+    padding: 3rem 1.5rem 2.5rem;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  header p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+  .container {
+    max-width: 780px;
+    margin: -1.5rem auto 3rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2.5rem 2.5rem 3rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #16213e;
+    margin: 2rem 0 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #e8ecf1;
+  }
+  h2:first-child { margin-top: 0; }
+  p, li { font-size: 0.97rem; color: #333; }
+  p { margin-bottom: 0.85rem; }
+  ul { margin: 0.5rem 0 1rem 1.5rem; }
+  li { margin-bottom: 0.4rem; }
+  strong { color: #1a1a2e; }
+  a { color: #2563eb; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    color: #888;
+  }
+  @media (max-width: 600px) {
+    header { padding: 2rem 1rem 1.5rem; }
+    header h1 { font-size: 1.5rem; }
+    .container { margin: -1rem 0.75rem 2rem; padding: 1.5rem; }
+  }
+</style>
+<script>
+  const APP_NAMES = {
+    "youtube-summarizer": "YouTube Summarizer",
+    "linkedin-ai-assistant": "LinkedIn AI Assistant",
+    "dark-mode-pro": "Dark Mode Pro",
+    "screenshot-tool": "Screenshot Tool",
+    "tab-manager-pro": "Tab Manager Pro",
+    "email-tracker": "Email Tracker",
+    "password-generator": "Password Generator",
+    "focus-timer": "Focus Timer"
+  };
+  document.addEventListener("DOMContentLoaded", function() {
+    var params = new URLSearchParams(window.location.search);
+    var slug = params.get("app") || "";
+    var name = APP_NAMES[slug] || "Our Extension";
+    document.title = "Privacy Policy - " + name;
+    document.querySelectorAll(".app-name").forEach(function(el) {
+      el.textContent = name;
+    });
+  });
+</script>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p><span class="app-name">Our Extension</span> &mdash; Last Updated: March 2026</p>
+</header>
+
+<div class="container">
+
+  <p>This Privacy Policy describes how <strong class="app-name">Our Extension</strong> ("the Extension", "we", "us", or "our"), developed by Vandit Tyagi, collects, uses, and protects information when you use our Chrome extension. By installing or using the Extension, you agree to the practices described in this policy.</p>
+
+  <h2>1. Information We Collect</h2>
+  <p>We are committed to minimizing data collection. The Extension may collect the following types of information:</p>
+  <ul>
+    <li><strong>Usage Analytics:</strong> Anonymous usage data such as feature interactions, session duration, and error reports to help us improve the Extension.</li>
+    <li><strong>Ad Identifiers:</strong> If the Extension displays advertisements, anonymous advertising identifiers may be collected by our ad partners to serve relevant ads.</li>
+    <li><strong>Extension Settings:</strong> Your preferences and configuration choices are stored locally on your device using Chrome's local storage APIs.</li>
+  </ul>
+  <p>We do <strong>not</strong> collect personally identifiable information (PII) such as your name, email address, browsing history, passwords, or any sensitive personal data unless you explicitly provide it (e.g., via a contact form).</p>
+
+  <h2>2. How We Use Information</h2>
+  <p>The information we collect is used solely for the following purposes:</p>
+  <ul>
+    <li><strong>Improving the Extension:</strong> Analytics data helps us understand how users interact with features, identify bugs, and prioritize improvements.</li>
+    <li><strong>Maintaining Functionality:</strong> Locally stored settings ensure the Extension works according to your preferences across sessions.</li>
+    <li><strong>Serving Advertisements:</strong> If applicable, ad identifiers enable our partners to display relevant, non-intrusive advertisements.</li>
+  </ul>
+  <p>We do <strong>not</strong> sell, rent, or trade your personal data to third parties for marketing or any other purpose.</p>
+
+  <h2>3. Third-Party Services</h2>
+  <p>The Extension may integrate with the following third-party services:</p>
+  <ul>
+    <li><strong>Google Analytics:</strong> We use Google Analytics to collect anonymous usage statistics. Google Analytics may use cookies or similar technologies. You can learn more about how Google uses data at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+    <li><strong>Google AdSense / Ad Networks:</strong> If ads are displayed, third-party ad networks may collect anonymous identifiers to serve ads. These partners have their own privacy policies governing data use.</li>
+  </ul>
+  <p>We encourage you to review the privacy policies of these third-party services. We are not responsible for the practices of third-party services.</p>
+
+  <h2>4. Data Storage</h2>
+  <ul>
+    <li><strong>Local Storage:</strong> The Extension stores your settings and preferences locally on your device using Chrome's <code>chrome.storage.local</code> and <code>localStorage</code> APIs. This data never leaves your device unless explicitly required for a feature.</li>
+    <li><strong>No External Databases:</strong> We do not maintain external databases containing your personal information. All user-specific data remains on your device.</li>
+    <li><strong>Data Retention:</strong> Locally stored data persists until you uninstall the Extension or manually clear it. Analytics data collected by third-party services is subject to their respective retention policies.</li>
+  </ul>
+
+  <h2>5. Your Rights</h2>
+  <p>You have the following rights regarding your data:</p>
+  <ul>
+    <li><strong>Access &amp; Deletion:</strong> You can view and delete locally stored data at any time by navigating to your browser's extension settings or by uninstalling the Extension.</li>
+    <li><strong>Opt-Out of Analytics:</strong> You may opt out of Google Analytics tracking by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</li>
+    <li><strong>Ad Personalization:</strong> You can manage ad personalization preferences through <a href="https://adssettings.google.com/" target="_blank" rel="noopener">Google Ads Settings</a>.</li>
+    <li><strong>Uninstall:</strong> You can remove the Extension at any time, which will delete all locally stored data associated with it.</li>
+  </ul>
+  <p>If you are located in the European Economic Area (EEA), you may have additional rights under the General Data Protection Regulation (GDPR), including the right to access, rectify, or erase personal data. Please contact us to exercise these rights.</p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>The Extension is not directed at children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, please contact us so we can take appropriate action.</p>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last Updated" date. Continued use of the Extension after changes are posted constitutes your acceptance of the revised policy.</p>
+
+  <h2>8. Contact Us</h2>
+  <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us at:</p>
+  <ul>
+    <li><strong>Developer:</strong> Vandit Tyagi</li>
+    <li><strong>Email:</strong> <a href="mailto:contact@vandittyagi.com">contact@vandittyagi.com</a></li>
+  </ul>
+
+</div>
+
+<footer>
+  &copy; 2026 Vandit Tyagi. All rights reserved.
+</footer>
+
+</body>
+</html>
